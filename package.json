@@ -7,22 +7,33 @@
     "dev": "remix dev --manual",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/index.js",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "cdk": "cdk"
   },
   "dependencies": {
     "@remix-run/css-bundle": "*",
     "@remix-run/node": "*",
     "@remix-run/react": "*",
     "@remix-run/serve": "*",
+    "@types/aws-lambda": "^8.10.82",
+    "aws-cdk-lib": "^2.122.0",
+    "constructs": "^10.0.0",
     "isbot": "^4.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "source-map-support": "^0.5.21"
   },
   "devDependencies": {
+    "@aws-cdk/aws-apigatewayv2-alpha": "2.114.1-alpha.0",
+    "@aws-cdk/aws-apigatewayv2-integrations-alpha": "2.114.1-alpha.0",
     "@remix-run/dev": "*",
+    "@types/node": "^18.17.1",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
+    "@types/source-map-support": "^0.5.10",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "aws-cdk": "^2.122.0",
+    "esbuild": "^0.19.12",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-import-resolver-typescript": "^3.6.1",
@@ -30,6 +41,7 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "tsx": "latest",
     "typescript": "^5.1.6"
   },
   "engines": {

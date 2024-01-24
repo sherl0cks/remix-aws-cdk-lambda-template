@@ -1,4 +1,11 @@
-# Welcome to Remix!
+# Welcome to Remix on AWS Serverless & CDK!
+
+This template does 3 things:
+1. Copies in the remix basic template for local development.
+2. Copies the remix architect server adapter for AWS lambda.
+3. Deploys the build output to API Gateway, Lambda and S3 using the AWS CDK.
+
+The idea is to keep as much out of the box remix magic as possible, but integrat
 
 - [Remix Docs](https://remix.run/docs)
 
@@ -28,11 +35,3 @@ npm start
 
 Now you'll need to pick a host to deploy it to.
 
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
